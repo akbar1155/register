@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@0.3.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>signup</title>
+</head>
+
+<body class="h-1/2 overflow-hidden flex items-center justify-center" style="background: #112036;">
+    <div class="bg-dark-lighter min-h-screen flex flex-col">
+        <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+            <div class="bg-green-dark px-6 py-8 rounded shadow-md text-black w-full">
+                <h1 class="mb-8 text-3xl text-center">Sign up</h1>
+
+
+                <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="fullname"
+                    placeholder="Full Name" />
+
+                <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="Username"
+                    placeholder="Username" />
+
+                <input type="number" class="block border border-grey-light w-full p-3 rounded mb-4" name="Phone"
+                    placeholder="Phone number" pattern="[0-9]{9}" required />
+                <!-- <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4"
+                    name="confirm_password" placeholder="Confirm Password" /> -->
+
+                <button type="submit"
+                    class="w-full text-center py-3 rounded bg-green text-white hover:bg-green-darker focus:outline-none my-1">Create
+                    Account</button>
+
+                <div class="text-center text-sm text-dark mt-4">
+                    By signing up, you agree to the
+                    <a class="no-underline border-b border-grey-dark text-dark" href="#">
+                        Terms of Service
+                    </a> and
+                    <a class="no-underline border-b border-grey-dark text-dark" href="#">
+                        Privacy Policy
+                    </a>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input id="terms" aria-describedby="terms" type="checkbox"
+                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                            required="">
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <label for="terms" class="font-light text-gray-500 dark:text-gray-300">I accept the <a
+                                class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                                href="#">Terms and Conditions</a></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-indigo mt-6">
+                Already have an account?
+                <a class="no-underline border-b border-blue text-blue" href="./login.html">
+                    Log in
+                </a>.
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
